@@ -20,7 +20,7 @@ with open('url_file.txt', 'w') as f:
 
 url_exotic ="https://www.exoticindiaart.com/"
 
-html_exotic = requests.get(url)
+html_exotic = requests.get(url_exotic)
 html_exotic = html_exotic.text
 
 soup_exotic = BeautifulSoup(html_exotic, 'html.parser')
